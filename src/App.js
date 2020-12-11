@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import Header from'./composants/Header' ;
-
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from'./composants/Header' ; 
+import List from './composants/List'
+
 
 class App extends Component {
 
   render() {
-    return <div> 
-      <Header /> 
-      
-    </div>
+    return (
+      <div className="App">
+        <Header />
+        <div className="Container">
+          <List />
+        </div>
+      </div>
+    )
     
 
 
